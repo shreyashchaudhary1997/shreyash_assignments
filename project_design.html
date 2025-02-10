@@ -1,0 +1,294 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines International Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .logo span {
+            color: #00aaff;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        header nav a:hover {
+            color: #00aaff;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            margin: 20px 0;
+        }
+
+        .hero button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flight-planner,
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .flight-planner {
+            flex: 1;
+            max-width: 30%;
+            margin-right: 20px;
+        }
+
+        .main-content {
+            flex: 2;
+            max-width: 65%;
+        }
+
+        .flight-planner h2,
+        .main-content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .flight-planner form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .flight-planner form input,
+        .flight-planner form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .flight-planner form button {
+            width: 100%;
+            background-color: #00aaff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .main-content h3 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+        }
+
+        .main-content button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .clients {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .clients p {
+            margin-bottom: 20px;
+        }
+
+        .clients .testimonial {
+            background-color: #e0f7ff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .clients .testimonial p {
+            font-style: italic;
+        }
+
+        .clients .testimonial .author {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>AIR</span> LINES
+                <div>INTERNATIONAL TRAVEL</div>
+            </div>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">OUR AIRCRAFT</a>
+                <a href="#">SAFETY</a>
+                <a href="#">CHARTERS</a>
+                <a href="#">CONTACTS</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="https://storage.googleapis.com/a1aa/image/SMtsGiVxBwD3LjkjGytjORYeKwT1o3bLkP13KBiefWw.jpg"
+            alt="Airplane flying in the sky">
+        <div class="content">
+            <h1>COMFORT Guaranteed</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <button>ORDER TICKETS ONLINE</button>
+        </div>
+    </section>
+    <div class="container">
+        <div class="flight-planner">
+            <h2>Your Flight Planner</h2>
+            <form>
+                <label>Trip Type</label>
+                <div>
+                    <label><input type="radio" name="trip"> Round Trip</label>
+                    <label><input type="radio" name="trip"> One Way</label>
+                    <label><input type="radio" name="trip"> Empty-Leg</label>
+                    <label><input type="radio" name="trip"> Multi-Leg</label>
+                </div>
+                <label>Leaving From</label>
+                <input type="text" placeholder="Enter City or Airport Code">
+                <label>Going To</label>
+                <input type="text" placeholder="Enter City or Airport Code">
+                <label>Departure Date and Time</label>
+                <input type="date">
+                <input type="time">
+                <label>Return Date and Time</label>
+                <input type="date">
+                <input type="time">
+                <label>Passengers</label>
+                <input type="number">
+                <button>GO!</button>
+            </form>
+        </div>
+        <div class="main-content">
+            <div>
+                <h2>Welcome to our Website!</h2>
+                <p>A aliquet auctor ac nulla est vestibulum est tincidunt parte id faucibus. Necpellus vel orci pede
+                    justo eros est eget tellus eu nunc. Hendrerit penatibus nec lorem net tempus vel in tempus urna quis
+                    morbi.</p>
+                <p>Nace eratquamet tempus arcu adipis quis partur conva nisl est eget id in. Faucibusorci a ligula nam
+                    venenatis et duis orci duis.</p>
+                <h3>Aircraft</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                    magni dolores eos qui ratione.</p>
+                <button>READ MORE</button>
+                <h3>Charters</h3>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+                <button>FLEET</button>
+                <button>RESERVATION</button>
+            </div>
+            <div class="clients">
+                <h2>Our Clients</h2>
+                <p>Avero eoset accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti.</p>
+                <p>Atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                    similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                <div class="testimonial">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                    <div class="author">- Mr. Thomas Lloyd</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2010 Domain Name - All Rights Reserved</p>
+        <p><a href="#">Free CSS Template</a> by TemplateMonster</p>
+    </footer>
+</body>
+
+</html>
